@@ -1,0 +1,4 @@
+softwares
+projects/**/node_modules
+projects/**/.idea
+*/.DS_Store

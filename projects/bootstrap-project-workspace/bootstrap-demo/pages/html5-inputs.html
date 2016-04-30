@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <title>Bootstrap 101 Template</title>
+    <!--响应是的最基本的原理，设置页面宽度等于设备宽度，设置最初缩放为1.0就是1：1比例呈现，不会有任何缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <style>
+    .search-icon {
+        width: 16px;
+        height: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="" role="form">
+        <div class="input-group">
+            <label>请输入搜索关键字：</label>
+            <input type="text" class="search-text form-control">
+            <span class="input-group-btn">
+            		<button class="btn">
+            			<img src="../css/img/search.png" class='search-icon' alt="">
+           			 </button>
+            	</span>
+        </div>
+        <div class="input-group">
+            <label>please input your twitter id:</label>
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="twitterhandle">
+        </div>
+    </form>
+</body>
+
+</html>
