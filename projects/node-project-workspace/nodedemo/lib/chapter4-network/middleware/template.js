@@ -1,3 +1,3 @@
 var cache={};
 // 子模板
-var compile=function(){};
+var compile=function(tpl,data){};
