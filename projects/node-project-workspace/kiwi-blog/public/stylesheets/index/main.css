@@ -1,0 +1,7 @@
+/*当页面下于时隐藏profile区域*/
+
+@media (max-width: 768px) {
+    .mod-person-profile {
+        display: none;
+    }
+}

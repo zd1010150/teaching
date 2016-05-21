@@ -1,0 +1,24 @@
+nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+	div.navbar-header
+		a.navbar-brand(href='#')
+			img.brand-img(src='/images/kiwi-icon.png')
+		button.navbar-toggle.collapsed(type='button',data-toggle='collapse',data-target='#navbar_static_fixed')
+			- for(var i=0;i<3;i++)
+				span.icon-bar
+	div.collapse.navbar-collapse(id='navbar_static_fixed')
+		form.navbar-form.navbar-right(action='/form/search.do',method='post')
+			div.form-group
+				div.input-group
+					input.form-control(type='text',name='keywords')
+					span.input-group-btn
+						button.btn.btn-default.search-btn(type='submit')
+							span.glyphicon.glyphicon-search
+		ul.nav.navbar-nav.navbar-right
+			li.active
+				a(href="#") 首页
+			li
+				a(href="/category") 目录
+			li
+				a(herf='/archive') 归档
+			li
+				a(href='/tags')	Tag

@@ -1,0 +1,13 @@
+//首页的模板
+extends layout
+append link
+	link(rel='stylesheet', href='/stylesheets/index/merge.css')
+
+block content
+	div.profile
+		include ./module/person-profile.jade
+	div.paper-extracts
+		each paper in papers
+			include ./index/paper-extract.jade
+
+

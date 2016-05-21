@@ -1,0 +1,10 @@
+extends layout
+block content
+	p.key-words 你搜索的关键字是：#{keywords}
+	div.mod.mod-search-result
+		div.content
+			div.container
+				ul.results
+					each result in results
+						li.result
+							div.container= result

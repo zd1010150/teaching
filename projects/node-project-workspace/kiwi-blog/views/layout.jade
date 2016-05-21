@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    block link
+      link(rel='icon',type='image/x-icon',href='/images/favicon.ico')
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      link(rel='stylesheet',href='/lib/bootstrap/css/bootstrap.min.css')
+    block script
+      script(src='/lib/jquery/jquery.min.js')    
+      script(src='/lib/bootstrap/js/bootstrap.min.js')    
+  body
+    block header
+      include ./module/nav.jade
+    block content
+      div.content this is content
+    block footer
+      div.footer this is footer

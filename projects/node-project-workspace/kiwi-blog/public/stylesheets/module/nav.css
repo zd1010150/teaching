@@ -1,0 +1,11 @@
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 60px;
+    font-size: 18px;
+    line-height: 50px;
+}
+.brand-img{
+	width:48px;
+	height:48px;
+}

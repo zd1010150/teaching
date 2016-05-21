@@ -1,0 +1,15 @@
+//首页的每一篇文章摘要的模板
+div.mod.mod-paper
+	div.header
+		div.container
+			div.paper-title= paper.paperTitle
+			div.paper-time= paper.paperTime
+	div.content
+		div.container= paper.paperExtract
+	div.footer
+		div.container
+			span.category= paper.paperCategory
+			span.tags
+				each tag in paper.tags
+					a.a-tag(href='#')= tag
+			span.read-time #{paper.paperReadTime} 次
